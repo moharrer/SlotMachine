@@ -28,7 +28,7 @@ namespace SlotMachine.Controllers
 
             if (!ConfiguratonValidation.DimentionIsValid(model.Length, model.Heigth))
             {
-                return BadRequest("The length and height must be greater than 0.");
+                return BadRequest("The length must be greater then 2 and height must be greater than 0.");
             }
 
             await configurationService.SetSlotMachineDimentionAsync(model.Length, model.Heigth);
