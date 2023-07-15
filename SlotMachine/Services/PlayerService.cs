@@ -79,7 +79,7 @@ namespace SlotMachine.Services
                     throw new UserFriendlyException("Insufficient Balance");
                 }
 
-                player.Balance += amount;
+                player.AddBalance(amount);
 
                 if (session != null)
                 {

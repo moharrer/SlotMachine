@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core
 {
-    public class Player: BaseEntity
+    public partial class Player: BaseEntity
     {
         public string Email { get; set; }
 
